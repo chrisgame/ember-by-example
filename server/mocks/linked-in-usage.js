@@ -4,7 +4,7 @@ module.exports = function(app) {
 
   linkedInUsageRouter.get('/', function(req, res) {
     res.send({
-      'linked-in-usage': [
+      'linkedInUsage': [
         {
           'connectionsMadeInTheLastDay': 0,
           'connectionsMadeInTheLastWeek': 0,

@@ -4,7 +4,7 @@ module.exports = function(app) {
 
   twitterUsageRouter.get('/', function(req, res) {
     res.send({
-      'twitter-usage': [
+      'twitterUsage': [
         {
           'tweetsSent': 24,
 

@@ -4,7 +4,7 @@ module.exports = function(app) {
 
   facebookUsageRouter.get('/', function(req, res) {
     res.send({
-      'facebook-usage': [
+      'facebookUsage': [
         {
           'friendsAcquiredInTheLastDay': 0,
           'friendsAcquiredInTheLastWeek': 0,

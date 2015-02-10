@@ -4,7 +4,7 @@ module.exports = function(app) {
 
   googlePlusUsageRouter.get('/', function(req, res) {
     res.send({
-      'google-plus-usage': [
+      'googlePlusUsage': [
         {
           'friendsAcquiredInTheLastDay': 0,
           'friendsAcquiredInTheLastWeek': 0,

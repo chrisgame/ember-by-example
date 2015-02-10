@@ -4,7 +4,7 @@ module.exports = function(app) {
 
   emailUsageRouter.get('/', function(req, res) {
     res.send({
-      'email-usage': [
+      'emailUsage': [
         {
           'messagesSent': 102,
           'messagesSentWithin1MinuteOfReading': 0,
