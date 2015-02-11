@@ -9,6 +9,6 @@ export default Em.Controller.extend({
     var messagesRecievedOnTime = this.get('model.messagesReadWithin1HourOfReceipt');
     var sendingUtilisation = (messagesSentOnTime / messagesSent) * 100;
     var recievingUtilisation = (messagesRecievedOnTime / messagesRecieved * 100);
-    return (sendingUtilisation / 2) + (recievingUtilisation / 2);
+    return Math.floor((sendingUtilisation / 2) + (recievingUtilisation / 2));
   }.property('model')
 });
