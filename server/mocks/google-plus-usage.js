@@ -9,12 +9,12 @@ module.exports = function(app) {
           'friendsAcquiredInTheLastDay': 0,
           'friendsAcquiredInTheLastWeek': 0,
           'friendsAcquiredInTheLastMonth': 0,
-          'friendsAcquiredInTheLastYear': 0,
+          'friendsAcquiredInTheLastYear': 2,
 
-          'hoursActiveInTheLastDay': 2,
-          'hoursActiveInTheLastWeek': 4,
-          'hoursActiveInTheLastMonth': 8,
-          'hoursActiveInTheLastYear': 40
+          'hoursActiveInTheLastDay': 0,
+          'hoursActiveInTheLastWeek': 14,
+          'hoursActiveInTheLastMonth': 56,
+          'hoursActiveInTheLastYear': 672
         }
       ]
     });
