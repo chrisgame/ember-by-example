@@ -5,9 +5,11 @@ export default Em.Route.extend({
     var emailService = this.emailService;
     var facebookService = this.facebookService;
     var googlePlusService = this.googlePlusService;
+    var linkedInService = this.linkedInService;
     var emailUsageController = this.controllerFor('emailUsage');
     var facebookUsageController = this.controllerFor('facebookUsage');
     var googlePlusUsageController = this.controllerFor('googlePlusUsage');
+    var linkedInUsageController = this.controllerFor('linkedInUsage');
 
     Em.run.once('afterRender', function() {
       emailService.fetch()
@@ -33,6 +35,16 @@ export default Em.Route.extend({
       googlePlusService.fetch()
         .then(function(result){
           googlePlusUsageController.set('model', result.googlePlusUsage[0]);
+        },
+        function(){
+          return {};
+        });
+    });
+
+    Em.run.once('afterRender', function() {
+      linkedInService.fetch()
+        .then(function(result) {
+          linkedInUsageController.set('model', result.linkedInUsage[0]);
         },
         function(){
           return {};

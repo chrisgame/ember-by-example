@@ -1,10 +1,11 @@
 import Em from 'ember';
 
 export default Em.Controller.extend({
-  needs: ['email-usage', 'facebook-usage', 'google-plus-usage'],
+  needs: ['email-usage', 'facebook-usage', 'google-plus-usage', 'linked-in-usage'],
   emailUsage: Em.computed.alias('controllers.email-usage'),
   facebookUsage: Em.computed.alias('controllers.facebook-usage'),
   googlePlusUsage: Em.computed.alias('controllers.google-plus-usage'),
+  linkedInUsage: Em.computed.alias('controllers.linked-in-usage'),
 
   emailUtilisation: function() {
     return this.get('emailUsage.utilisation');
@@ -16,5 +17,9 @@ export default Em.Controller.extend({
 
   googlePlusUtilisation: function() {
     return this.get('googlePlusUsage.utilisation');
-  }.property('googlePlusUsage.model')
+  }.property('googlePlusUsage.model'),
+
+  linkedInUtilisation: function() {
+    return this.get('linkedInUsage.utilisation');
+  }.property('linkedInUsage.model')
 });
