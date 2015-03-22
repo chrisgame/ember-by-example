@@ -1,45 +1,32 @@
-<h2>Email Utilisation</h2>
-<div class="gauge-holder">
-  {{percentage-gauge name='email'
-                     icon=emailIcon
-                     innerColor="#00A34F"
-                     outerColor="#4AB547"
-                     percentage=emailUtilisation
-  }}
-</div>
-<h2>Facebook Utilisation</h2>
-<div class="gauge-holder">
-  {{percentage-gauge name="facebook"
-                     icon=facebookIcon
-                     innerColor="#8DC421"
-                     outerColor="#BAD42F"
-                     percentage=facebookUtilisation
-  }}
-</div>
-<h2>Google Plus Utilisation</h2>
-<div class="gauge-holder">
-  {{percentage-gauge name="googlePlus"
-                     icon=googlePlusIcon
-                     innerColor="#8DC421"
-                     outerColor="#BAD42F"
-                     percentage=googlePlusUtilisation
-  }}
-</div>
-<h2>Linked In Utilisation</h2>
-<div class="gauge-holder">
-  {{percentage-gauge name="linkedIn"
-                     icon=linkedInIcon
-                     innerColor="#8DC421"
-                     outerColor="#BAD42F"
-                     percentage=linkedInUtilisation
-  }}
-</div>
-<h2>Twitter Utilisation</h2>
-<div class="gauge-holder">
-  {{percentage-gauge name="twitter"
-                     icon=twitterIcon
-                     innerColor="#8DC421"
-                     outerColor="#BAD42F"
-                     percentage=twitterUtilisation
-  }}
+<div class="dashboard">
+  <div class="gauge-holder">
+    <h2>Email Utilisation</h2>
+    {{percentage-gauge name='email'
+                       percentage=emailUtilisation
+    }}
+  </div>
+  <div class="gauge-holder">
+    <h2>Facebook Utilisation</h2>
+    {{percentage-gauge name="facebook"
+                       percentage=facebookUtilisation
+    }}
+  </div>
+  <div class="gauge-holder">
+    <h2>Google Plus Utilisation</h2>
+    {{percentage-gauge name="google-plus"
+                       percentage=googlePlusUtilisation
+    }}
+  </div>
+  <div class="gauge-holder">
+    <h2>Linked In Utilisation</h2>
+    {{percentage-gauge name="linked-in"
+                       percentage=linkedInUtilisation
+    }}
+  </div>
+  <div class="gauge-holder">
+    <h2>Twitter Utilisation</h2>
+    {{percentage-gauge name="twitter"
+                       percentage=twitterUtilisation
+    }}
+  </div>
 </div>

@@ -1,8 +1,39 @@
 html, body {
   margin: 20px;
+  font: menu;
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
 }
 
 .gauge-holder {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+}
+
+.gauge-holder text {
+  fill: #FFF;
+}
+
+.email {
+  fill: #A0DB8E;
+}
+
+.facebook {
+  fill: #5BBF21;
+}
+
+.google-plus {
+  fill: #8CD600;
+}
+
+.linked-in {
+  fill: #BAD80A;
+}
+
+.twitter {
+  fill: #BAC405;
 }
