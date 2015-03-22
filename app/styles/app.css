@@ -1,3 +1,8 @@
 html, body {
   margin: 20px;
 }
+
+.gauge-holder {
+  width: 200px;
+  height: 200px;
+}
