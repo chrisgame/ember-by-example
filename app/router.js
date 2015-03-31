@@ -6,6 +6,16 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('vanilla-route');
+  this.resource('vanilla-resource');
+  this.resource('artists');
+  this.resource('artist', { path: '/artist/:artist_id' }, function() {
+    this.resource('albums');
+    this.resource('album', { path: '/album/:album_id' }, function() {
+      this.resource('tracks');
+      this.resource('track', { path : '/track/track_id' });
+    });
+  });
   this.route('dashboard');
 });
 
