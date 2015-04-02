@@ -1,6 +1,8 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+  album: DS.belongsTo('album'),
   name: DS.attr('string'),
-  albums: DS.hasMany('album', {async:true})
+  position: DS.attr('number'),
+  duration: DS.attr('number')
 });

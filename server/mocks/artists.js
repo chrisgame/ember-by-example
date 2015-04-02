@@ -4,16 +4,11 @@ module.exports = function(app) {
 
   artistsRouter.get('/', function(req, res) {
     res.send({
-      'artists': [
-        {
-          id: 1,
-          name: 'roots manuva'
-        },
-        {
-          id: 2,
-          name: 'dave'
-        }
-      ]
+        "artists": [{
+          "id": 1,
+          "name": 'roots manuva',
+          "albums": [10, 11, 12, 13, 14, 15, 16, 17, 18]
+        }]
     });
   });
 
@@ -22,11 +17,26 @@ module.exports = function(app) {
   });
 
   artistsRouter.get('/:id', function(req, res) {
-    res.send({
-      'artists': {
-        id: req.params.id
-      }
-    });
+    var result;
+
+    switch(req.params.id) {
+      case '1':
+        result = {
+          "artist": {
+            "id": req.params.id,
+            "name": 'roots manuva',
+            "albums": [10, 11, 12, 13, 14, 15, 16, 17, 18]
+          }
+        };
+      break;
+      default:
+        result = {'artist':
+          {
+            id: req.params.id
+          }
+        }
+      };
+    res.send(result);
   });
 
   artistsRouter.put('/:id', function(req, res) {
