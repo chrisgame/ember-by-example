@@ -1,4 +1,4 @@
-<h1>{{model.name}}</h1>
+<h2>Albums</h2>
 <ul>
 {{#each album in model.albums}}
   <li>{{#link-to 'album' album.id}}{{album.title}}{{/link-to}}</li>
