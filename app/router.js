@@ -14,6 +14,7 @@ Router.map(function() {
       });
     });
   });
+  this.route('nested-resource-diagram', { path: '/artists/artist/1/album/1/diagram' } );
   this.route('dashboard');
 });
 
