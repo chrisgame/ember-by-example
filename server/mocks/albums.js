@@ -20,7 +20,8 @@ module.exports = function(app) {
         result = {'album':
           {
             id: 10,
-            title: 'Brand New Second Hand'
+            title: 'Brand New Second Hand',
+            tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
           }
         }
       break;
@@ -28,7 +29,8 @@ module.exports = function(app) {
         result = {'album':
           {
             id: 11,
-            title: 'Run Come Save Me'
+            title: 'Run Come Save Me',
+            tracks: [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
           }
         }
       break;

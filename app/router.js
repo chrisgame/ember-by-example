@@ -11,7 +11,6 @@ Router.map(function() {
   this.resource('artists', function() {
     this.resource('artist', { path: '/artist/:artist_id' }, function() {
       this.resource('album', { path: '/album/:album_id' }, function() {
-        this.resource('track', { path : '/track/:track_id' });
       });
     });
   });

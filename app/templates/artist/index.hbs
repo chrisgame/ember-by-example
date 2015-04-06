@@ -1,6 +1,7 @@
 <h1>{{model.name}}</h1>
 <ul>
 {{#each album in model.albums}}
-    <li>{{album.title}}</li>
+  <li>{{#link-to 'album' album.id}}{{album.title}}{{/link-to}}</li>
 {{/each}}
 </ul>
+{{outlet}}
