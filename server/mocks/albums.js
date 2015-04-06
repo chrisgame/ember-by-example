@@ -81,7 +81,7 @@ module.exports = function(app) {
           }
         }
     };
-    res.send(result);
+    setTimeout(function() { res.send(result) }, 3000);
   });
 
   albumsRouter.put('/:id', function(req, res) {

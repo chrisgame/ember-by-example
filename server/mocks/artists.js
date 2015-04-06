@@ -3,13 +3,14 @@ module.exports = function(app) {
   var artistsRouter = express.Router();
 
   artistsRouter.get('/', function(req, res) {
-    res.send({
+    var result = {
         "artists": [{
           "id": 1,
           "name": 'roots manuva',
           "albums": [10, 11, 12, 13, 14, 15, 16, 17, 18]
         }]
-    });
+    }
+    setTimeout(function() { res.send(result) }, 2000);
   });
 
   artistsRouter.post('/', function(req, res) {
@@ -36,7 +37,7 @@ module.exports = function(app) {
           }
         }
       };
-    res.send(result);
+    setTimeout(function() { res.send(result) }, 5000);
   });
 
   artistsRouter.put('/:id', function(req, res) {
