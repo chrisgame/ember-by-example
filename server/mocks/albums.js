@@ -16,60 +16,60 @@ module.exports = function(app) {
     var result;
 
     switch(req.params.id) {
-      case '10':
+      case '1':
         result = {'album':
           {
-            id: 10,
+            id: 1,
             title: 'Brand New Second Hand',
             tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
           }
         }
       break;
-      case '11':
+      case '2':
         result = {'album':
           {
-            id: 11,
+            id: 2,
             title: 'Run Come Save Me',
             tracks: [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
           }
         }
       break;
-      case '12':
+      case '3':
         result = {'album':
           {
-            id: 12,
+            id: 3,
             title: 'Dub Come Save Me'
           }
         }
       break;
-      case '13':
+      case '4':
         result = {'album':
           {
-            id: 13,
+            id: 4,
             title: 'Awfully Deep'
           }
         }
       break;
-      case '14':
+      case '5':
         result = {'album':
           {
-            id: 14,
+            id: 5,
             title: 'Slime & Reason'
           }
         }
       break;
-      case '15':
+      case '6':
         result = {'album':
           {
-            id: 15,
+            id: 6,
             title: 'Duppy Writer'
           }
         }
       break;
-      case '16':
+      case '7':
         result = {'album':
           {
-            id: 16,
+            id: 7,
             title: '4everevolution'
           }
         }

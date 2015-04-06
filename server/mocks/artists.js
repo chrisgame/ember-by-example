@@ -7,7 +7,7 @@ module.exports = function(app) {
         "artists": [{
           "id": 1,
           "name": 'roots manuva',
-          "albums": [10, 11, 12, 13, 14, 15, 16, 17, 18]
+          "albums": [1, 2, 3, 4, 5, 6, 7]
         }]
     }
     setTimeout(function() { res.send(result) }, 2000);
@@ -26,7 +26,7 @@ module.exports = function(app) {
           "artist": {
             "id": req.params.id,
             "name": 'roots manuva',
-            "albums": [10, 11, 12, 13, 14, 15, 16, 17, 18]
+            "albums": [1, 2, 3, 4, 5, 6, 7,]
           }
         };
       break;
