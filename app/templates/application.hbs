@@ -1,21 +1,25 @@
-<menu>
-  <h1>Examples</h1>
-  <ul>
-    <li>
-      {{#link-to 'vanilla-route'}}Vanilla Route{{/link-to}}
-    </li>
-    <li>
-      {{#link-to 'vanilla-resource'}}Vanilla Resource{{/link-to}}
-    </li>
-    <li>
-      {{#link-to 'artists'}}Nested Resources{{/link-to}}
-    </li>
-    <li>
-      {{#link-to 'nested-resource-diagram'}}Nested Resource Diagram{{/link-to}}
-    </li>
-    <li>
-      {{#link-to 'dashboard'}}Multiple Data Sources Single Route{{/link-to}}
-    </li>
-  </ul>
-</menu>
-{{outlet}}
+<div class="container">
+  <menu class="item">
+    <h1>Examples</h1>
+    <ul>
+      <li>
+        {{#link-to 'vanilla-route'}}Vanilla Route{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'vanilla-resource'}}Vanilla Resource{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'artists'}}Nested Resources{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'nested-resource-diagram'}}Nested Resource Diagram{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'dashboard'}}Multiple Data Sources Single Route{{/link-to}}
+      </li>
+    </ul>
+  </menu>
+  <div class="item examples">
+    {{outlet}}
+  </div>
+</div>
