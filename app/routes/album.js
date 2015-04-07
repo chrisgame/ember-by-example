@@ -2,7 +2,10 @@ import Em from 'ember';
 
 export default Em.Route.extend({
   beforeModel: function(transition) {
-    if(transition.state.params.album.album_id > 7) {
+    var albumCount = transition.resolvedModels.artist._data.albums.length;
+    var requestedAlbumId = parseInt(transition.params.album.album_id);
+    var idOfLastAlbum = parseInt(transition.resolvedModels.artist._data.albums[albumCount - 1].id);
+    if(requestedAlbumId > idOfLastAlbum) {
       this.transitionTo('artist');
     }
   },
