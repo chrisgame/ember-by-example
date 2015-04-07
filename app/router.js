@@ -6,8 +6,6 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('vanilla-route');
-  this.resource('vanilla-resource');
   this.resource('artists', function() {
     this.resource('artist', { path: '/artist/:artist_id' }, function() {
       this.resource('album', { path: '/album/:album_id' }, function() {
