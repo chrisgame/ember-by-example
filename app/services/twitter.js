@@ -6,7 +6,6 @@ export default Em.Object.extend({
       Em.$.ajax({
         method: 'GET',
         url: 'api/twitter-usage',
-        type: 'text/json',
         success: function(result) {
           res(result);
         },

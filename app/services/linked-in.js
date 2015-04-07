@@ -7,7 +7,6 @@ export default Em.Object.extend({
       Em.$.ajax({
         method: 'GET',
         url: '/api/linked-in-usage',
-        type: 'text/json',
         success: function(result) {
           req(result);
         },
