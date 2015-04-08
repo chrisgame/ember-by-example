@@ -7,13 +7,22 @@ html, body {
   /*background-color: #fffff6;*/
 }
 
-menu {
-  padding: 0;
+nav {
+  position: absolute;
+  top: 0;
+  left: -310px;
+  height: 100%;
+  width: 300px;
+  border-right: 10px #dfdfdf solid;
+  margin: 0;
+  padding: 0 0 0 10px;
   text-align: left;
+  background-color: rgba(230, 230, 230, 0.8);
+  transition: left 0.5s;
 }
 
-menu .item {
-  flex-grow: 1;
+nav:hover {
+  left: 0;
 }
 
 ul {
@@ -23,18 +32,6 @@ ul {
 
 a.active {
   color: #8CD600;
-}
-
-.container {
-  display: flex;
-}
-
-.item {
-  margin: 10px;
-}
-
-.item.examples {
-  flex-grow: 2;
 }
 
 .dashboard {
