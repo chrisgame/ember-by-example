@@ -1,0 +1,15 @@
+<h2>Tracks</h2>
+<table align="center">
+  <tr>
+    <th>No</th>
+    <th>Title</th>
+    <th>Length</th>
+  </tr>
+  {{#each track in model.tracks}}
+  <tr>
+    <td>{{track.position}}</td>
+    <td>{{track.name}}</td>
+    <td>{{track.duration}}</td>
+  </tr>
+  {{/each}}
+</table>

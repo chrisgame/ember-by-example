@@ -1,12 +1,18 @@
 import Em from 'ember';
 
 export default Em.Route.extend({
+  emailService: Em.inject.service('email'),
+  facebookService: Em.inject.service('facebook'),
+  googlePlusService: Em.inject.service('google-plus'),
+  linkedInService: Em.inject.service('linked-in'),
+  twitterService: Em.inject.service('twitter'),
+
   afterModel: function(){
-    var emailService = this.emailService;
-    var facebookService = this.facebookService;
-    var googlePlusService = this.googlePlusService;
-    var linkedInService = this.linkedInService;
-    var twitterService = this.twitterService;
+    var emailService = this.get('emailService');
+    var facebookService = this.get('facebookService');
+    var googlePlusService = this.get('googlePlusService');
+    var linkedInService = this.get('linkedInService');
+    var twitterService = this.get('twitterService');
     var emailUsageController = this.controllerFor('emailUsage');
     var facebookUsageController = this.controllerFor('facebookUsage');
     var googlePlusUsageController = this.controllerFor('googlePlusUsage');
