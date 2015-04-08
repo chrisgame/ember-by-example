@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('nested-resource-diagram-step-2', { path: '/artists/artist/1/album/1/diagram-step-2' } );
   this.route('dashboard');
   this.route('multiple-data-sources-single-route-diagram');
+  this.route('fin');
 });
 
 export default Router;
