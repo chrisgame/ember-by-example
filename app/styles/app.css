@@ -2,6 +2,9 @@ html, body {
   margin: 20px;
   font: menu;
   text-align: center;
+  color: #666666;
+  background-color: #fffffa;
+  /*background-color: #fffff6;*/
 }
 
 menu {
